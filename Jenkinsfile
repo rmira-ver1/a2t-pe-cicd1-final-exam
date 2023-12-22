@@ -4,21 +4,21 @@ pipeline
             stage('Build') {
                 steps {
                     script {
-                        sh "./build.sh"
+                        sh './build.sh'
                     }
                 }
             }
             stage('Test') {
                 steps {
                     script {
-                        sh "./test.sh"
+                        sh './test.sh'
                     }
                 }
             }
             stage('Deploy') {
                 steps {
                     script {
-                        sh "deploy.sh"
+                        sh 'deploy.sh'
                     }
                 }
             }
